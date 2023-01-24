@@ -201,6 +201,7 @@ void PureSoftRemoteProvisioningContext::GetHwInfo(GetHwInfoResponse* hwInfo) con
     hwInfo->rpcAuthorName = "Google";
     hwInfo->supportedEekCurve = 2 /* CURVE_25519 */;
     hwInfo->uniqueId = "default keymint";
+    hwInfo->supportedNumKeysInCsr = 20;
 }
 
 cppcose::ErrMsgOr<cppbor::Array>
